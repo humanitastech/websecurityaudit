@@ -13,5 +13,10 @@ This list guides technical inspection; it is neither the complete ENS measures c
 | Infrastructure | Environment separation, network, exposed services, hardening, and provider responsibilities | Configuration and operational evidence, avoiding assumptions based on website appearance |
 | Operations | Logs, alerts, incidents, recovery, availability, and changes | Sanitized logs, procedures, and restoration tests |
 | Organization | Policy, responsible parties, assets, risk, applicability, suppliers, and training | Approved documents and dated records |
+| Public forms and abuse | Contact/newsletter forms, spam controls, email header injection, server-side validation, and unintended disclosure in errors | Form-to-handler trace, mail configuration, and safe synthetic submissions |
+| Frontend and third parties | DOM sinks, inline scripts, embedded widgets, analytics, third-party script privileges, source maps, and browser storage | Templates, bundles, script inventory, and actual data exposure; public configuration is not automatically a secret |
+| CMS and extensions | Supported core/plugin/theme versions, privileged actions, upload execution, extension permissions, and update ownership | Exact installed versions, official advisories, and runtime enforcement; a CSRF nonce is not authorization |
+| Site APIs and business flows | Object-level permissions, mass assignment, rate limits, webhook authenticity, replay, and payment state if present | Cross-identity local tests and server-side state transitions; a browser success redirect is not proof of payment |
+| Hosting and deployment | Public build output, exposed backup/config files, cache separation, preview environments, and CI token permissions | Deployment rules and evidence; exclude backend secrets from frontend artifacts |
 
 Retain minimal evidence, removing tokens, credentials, and personal data. Mark each test as executed, not executed, or inconclusive. Record frontend, backend, API, infrastructure, and governance coverage separately. A static site may not need its own session controls; still inspect its pipeline, hosting, and existing integrations.

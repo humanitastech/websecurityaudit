@@ -13,6 +13,10 @@ GitHub home: [humanitastech](https://github.com/humanitastech).
 - Distinguishes confirmed vulnerabilities, provisional hypotheses, and missing evidence.
 - Produces a traceable findings report, requirements matrix, and prioritized remediation plan.
 - Responds and writes reports in the user's language. The skill itself is maintained in English.
+- Covers static sites, CMS sites, server-rendered applications, SPAs, and their APIs, selecting checks for the features actually present.
+- Models realistic threats, verifies candidate findings, reviews security-sensitive changes, and validates authorized fixes.
+
+The [bibliography](references/bibliography.md) credits methodological references from OpenAI and Trail of Bits and separates them from ENS/ISO normative sources. These references do not require installing additional skills.
 
 This is an assessment workflow, not an automated scanner or certification service. It does not establish ENS or ISO conformity by itself. Normative versions and applicability must be verified for each assessment. It does not include copyrighted ISO standard texts.
 
@@ -22,6 +26,8 @@ This is an assessment workflow, not an automated scanner or certification servic
 SKILL.md                  Main skill instructions
 references/standards.md    Official sources and standard selection
 references/checks.md       Technical inspection and evidence guidance
+references/web-review.md   Website assessment and development review workflow
+references/bibliography.md Methodological and normative bibliography
 VERSION                    Release version
 ```
 
@@ -46,11 +52,11 @@ Replace the final language instruction or omit it to use your conversation langu
 
 ## Use with ChatGPT
 
-For a portable, manual workflow, attach or paste `SKILL.md`, `references/standards.md`, and `references/checks.md` into a conversation that supports the required inputs. Ask:
+For a portable, manual workflow, attach or paste `SKILL.md` and the Markdown files in `references/` into a conversation that supports the required inputs. Ask:
 
 ```text
 Use the attached HT Web Security Audit — ENS instructions as the
-workflow for this assessment. Read the two reference documents.
+workflow for this assessment. Read the relevant reference documents.
 Review only the files and evidence I provide. Identify anything
 you cannot verify. Respond in my language.
 ```
@@ -61,7 +67,7 @@ Official background: [OpenAI skill concepts](https://developers.openai.com/plugi
 
 ## Use with other AI assistants
 
-The instructions are plain Markdown and can be supplied as context to another assistant. Include both reference files and explicitly ask it to follow the workflow. For agents that support `SKILL.md`, follow that agent's own installation and discovery documentation; folder locations, invocation syntax, tools, and permission behavior differ. Compatibility has not been independently tested across other products.
+The instructions are plain Markdown and can be supplied as context to another assistant. Include the reference files and explicitly ask it to follow the workflow. For agents that support `SKILL.md`, follow that agent's own installation and discovery documentation; folder locations, invocation syntax, tools, and permission behavior differ. Compatibility has not been independently tested across other products.
 
 An assistant without browsing must report that it cannot verify current normative versions. An assistant without execution or repository access must limit conclusions to supplied evidence. Do not claim tests ran when they did not.
 
@@ -72,8 +78,9 @@ Use only on systems you own or are authorized to assess. Define targets, environ
 ## Branches and versioning
 
 - `main`: initial public baseline and documentation.
-- `dev`: development branch carrying version `1.0.0`.
-- Tag `v1.0.0`: immutable snapshot of the versioned commit on `dev` at publication.
+- `dev`: development branch carrying version `1.1.0`.
+- Tag `v1.1.0`: snapshot of the website-focused update on `dev` at publication.
+- Tag `v1.0.0`: preserved initial release.
 
 The GitHub release targets `dev`; it does not merge `dev` into `main`. Branches may advance after the tag is created. See [CHANGELOG.md](CHANGELOG.md) for release details.
 
