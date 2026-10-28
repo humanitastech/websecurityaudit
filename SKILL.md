@@ -29,9 +29,9 @@ For each mapping, record the confirmed ENS identifier, verified ISO reference, r
 
 If criteria appear to conflict, explain both requirements and propose a solution satisfying both; do not discard an ENS requirement for convenience. Compensating measures require documented justification, evidence of equivalent or stronger protection, and handling under the current ENS rules. An audit recommendation does not approve an exception. Other applicable legal or contractual duties still require their own analysis.
 
-## Execution
+## Modular execution
 
-Read [checks and evidence](references/checks.md). Prioritize surfaces actually present in the project. Inspect code, configuration, dependencies, and documentation; connect behavior to data flows and privileges. Record the commit, environment, tools, relevant commands, and coverage.
+First read [profiles and audit records](references/audit-records.md), select a profile and applicable modules, and initialize a unique audit record. Load only selected [modules](references/modules/index.md), preserving excluded and unverified scope explicitly. Use [checks and evidence](references/checks.md) as an optional broad inventory, not a mandatory all-at-once prompt. Prioritize surfaces actually present in the project. Inspect code, configuration, dependencies, and documentation; connect behavior to data flows and privileges. Record the commit, environment, tools, relevant commands, and coverage.
 
 For website audits and security-focused development reviews, follow the applicable sections of [web review workflow](references/web-review.md): establish context and threats, trace candidate findings, inspect changes when a baseline exists, and validate authorized fixes. Support static sites, CMS-based sites, server-rendered sites, SPAs, and their APIs; do not assume features are present. Security guidance for new development must match the actual framework and version. Preserve the user's chosen architecture unless a demonstrated risk requires a targeted change.
 
@@ -43,7 +43,7 @@ Assign each result a status: satisfied within the verified scope, partially sati
 
 ## Deliverables
 
-Save a Markdown report in the project or requested location, in the user's language, including:
+Maintain audit.json and a generated report.md following the record contract. Keep human review independent of technical verdicts and retain history across checkpoints and retests. Deliver the report in the user's language (translate generated structural headings when necessary; retain JSON keys and enum values). Include:
 
 - Scope, date, normative versions, validated or provisional category, assumptions, and limitations.
 - Main risks and actual coverage, without a compliance percentage based only on technical checks.

@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "audit_id": "replace-with-unique-id",
+  "previous_audit_id": null,
+  "profile": "component",
+  "scope": "Replace with the actual site boundary and exclusions",
+  "revision": "Replace with the actual commit or explicitly unavailable",
+  "baseline_revision": null,
+  "environment": "Replace with the inspected environment",
+  "working_tree": "clean",
+  "working_tree_evidence": null,
+  "summary": "Assessment not started",
+  "threat_model": "Not assessed yet",
+  "limitations": [],
+  "sources": [],
+  "modules": [],
+  "evidence": [],
+  "checks": [],
+  "findings": [],
+  "history": []
+}

@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.0 — 2026-10-28
+
+- Added seven selectively loaded website audit modules and changes/component/full profiles.
+- Added linked JSON coverage, findings, evidence, human decisions, and revision checkpoints.
+- Added a standard-library validator and Markdown dossier renderer with integrity tests.
+- Added manual behavioral evaluation cases; independent AI evaluation is not claimed.
+
+
 ## 1.1.0 — 2026-10-14
 
 - Focused the workflow on static, CMS, server-rendered, and SPA websites and their APIs.

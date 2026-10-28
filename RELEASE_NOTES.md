@@ -1,9 +1,7 @@
-# HT Web Security Audit — ENS 1.1.0
+# HT Web Security Audit ENS 1.2.0
 
-Website-focused update of the evidence-driven web security assessment skill.
+Modular website audit profiles, seven selective modules, JSON coverage and findings, human review decisions, evidence dossiers, and revision-aware checkpoints. Includes a standard-library validator and Markdown renderer, six integrity tests, and manual behavioral evaluation cases. The latter have not been independently executed as model evaluations.
 
-Adds website threat modeling, false-positive verification, review of changes, post-fix validation, and expanded checks for forms, CMS sites, frontend integrations, APIs, deployment, and dependencies. Includes a bibliography attributing methodological references from OpenAI and Trail of Bits and distinguishing them from normative ENS/ISO sources. No upstream scripts or skill files are bundled.
+Published on dev only. ENS-first criteria, user-language responses, and original authorship remain unchanged. This release does not certify conformity.
 
-Published from `dev`. The `v1.1.0` tag records its release commit; no merge into `main` is implied. Version `1.0.0` remains unchanged. This workflow does not provide ENS or ISO certification. Cross-product compatibility has not been independently tested.
-
-Author: **Voxiferum**, for **HumaitasTech**, with support from **Codex**.
+Author: Voxiferum, for HumaitasTech, with support from Codex.
