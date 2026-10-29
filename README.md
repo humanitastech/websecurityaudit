@@ -78,7 +78,7 @@ Use only on systems you own or are authorized to assess. Define targets, environ
 ## Branches and versioning
 
 - `main`: initial public baseline and documentation.
-- `dev`: development branch carrying version `1.1.0`.
+- `dev`: development branch carrying version `1.2.1`.
 - Tag `v1.1.0`: snapshot of the website-focused update on `dev` at publication.
 - Tag `v1.0.0`: preserved initial release.
 
@@ -89,3 +89,17 @@ The GitHub release targets `dev`; it does not merge `dev` into `main`. Branches 
 Created by **Voxiferum**, for **HumaitasTech**, with support from **Codex**. ENS, ISO, and OpenAI names identify external standards or products; no endorsement is claimed.
 
 No open-source license has been selected for this release. Public visibility does not by itself grant a general license to redistribute or modify the original material. Ask the author about reuse terms. Referenced standards retain their respective rights.
+
+## Modular audits and human inspection
+
+Choose changes, component, or full scope. The skill loads only relevant modules and saves a revision-bound audit.json plus a Markdown dossier. Human acceptance is separate from technical confirmation; missing evidence and pending checks remain visible. See [record workflow](references/audit-records.md) and [module catalog](references/modules/index.md).
+
+Start from assets/audit-template.json. Validate with Python: python scripts/audit_records.py validate audit.json. Generate a new report with: python scripts/audit_records.py render audit.json --output report.md. No third-party packages are required. Structural checks do not establish security or conformity. Run integrity tests with python -m unittest discover -s tests. Manual AI evaluation scenarios are in tests/behavioral-cases.md.
+
+## PHP runtime advisories
+
+PHP sites also load the runtime module, covering deployed versions, vendor backports, native dependencies, and rollout evidence. See [dated PHP advisory snapshot](references/php-advisories.md) and [PHP runtime checks](references/modules/php-runtime.md). Official guidance is refreshed per audit; a clean source-code review or Composer audit does not establish runtime safety.
+
+## Release article
+
+Read [Web Security Audit 1.2.1](ARTICLE-1.2.1.md) for an English introduction to the PHP runtime update and the existing modular review workflow.

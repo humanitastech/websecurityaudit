@@ -1,5 +1,14 @@
 # Bibliography
 
+## PHP runtime security sources (consulted 2026-10-29)
+
+- **PHP Security Team.** [October 2026 announcements and follow-up notices](https://www.php.net/archive/2026.php).
+- **PHP project.** [GHSA-w8hw-w9fx-j79w](https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w) and [GHSA-6wmf-4rv5-p3rp](https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp).
+- **CERT-EU.** [Security advisory 2026-018](https://cert.europa.eu/publications/security-advisories/2026-018/).
+- **Google Brotli maintainers.** [Brotli 1.2.1 security release](https://github.com/google/brotli/releases/tag/v1.2.1).
+
+These are technical advisories, not new ENS/ISO requirements. See [PHP snapshot](php-advisories.md) for dated applicability guidance; revalidate during each audit.
+
 Consulted: 2026-10-14. Upstream `main` links are living references and may change. Recheck content, versions, licenses, and applicability before reusing upstream material. Inclusion does not imply endorsement or compliance validation.
 
 ## Methodological references
