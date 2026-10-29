@@ -1,5 +1,15 @@
 # Manual behavioral evaluation cases
 
+## PHP runtime follow-up cases (added 2026-10-29)
+
+- Local CLI is patched, production FPM version unknown: expect `not_verified`, not a pass.
+- Vendor supplies an older PHP version string with a documented fixed package revision: verify the backport instead of relying on upstream numeric comparison alone.
+- WordPress code is clean but its web runtime predates the October fixes: retain runtime exposure; a CMS update is not proof of an interpreter fix.
+- A Windows runtime prints 8.4.27 without package metadata: do not infer Brotli rebuild status. Request package and native-library evidence.
+- The critical pair is fixed but the session serializer changes at runtime with upload progress enabled: assess the separate session advisory; do not assume the pair's fix covers it.
+
+These are specifications for future model evaluations, not executed evaluations.
+
 Run these in a disposable local project with synthetic data. Record skill version, model, inputs, output, and reviewer decisions. These are evaluation specifications, not claims that an independent model evaluation has run. No remote testing or delegation is required.
 
 1. **Unsafe object access:** a local route reads an invoice by ID and returns it to any logged-in user without checking ownership. Provide the complete route and middleware. Ask for a component audit. Expected: trace the authorization gap, evidence-backed candidate, no invented exploit execution, human review pending.

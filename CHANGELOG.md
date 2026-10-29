@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.1 — 2026-10-29
+
+- Added a PHP runtime module with deployed SAPI/package, vendor-backport, native-library, and post-rollout evidence checks.
+- Added a dated official-source snapshot for PHP2Shell, the follow-up session issue, and Windows Brotli package rebuilds.
+- Added PHP-specific manual evaluation cases and bibliography entries; these model evaluations have not been executed.
+
 ## 1.2.0 — 2026-10-28
 
 - Added seven selectively loaded website audit modules and changes/component/full profiles.

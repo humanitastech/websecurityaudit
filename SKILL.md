@@ -31,6 +31,8 @@ If criteria appear to conflict, explain both requirements and propose a solution
 
 ## Modular execution
 
+For PHP-backed sites, always consider the `php-runtime` module alongside application checks. Refresh [PHP advisories](references/php-advisories.md), identify the deployed web runtime/package and vendor backports, and distinguish application-code evidence from runtime patch evidence. A local CLI version or clean Composer audit cannot establish production safety.
+
 First read [profiles and audit records](references/audit-records.md), select a profile and applicable modules, and initialize a unique audit record. Load only selected [modules](references/modules/index.md), preserving excluded and unverified scope explicitly. Use [checks and evidence](references/checks.md) as an optional broad inventory, not a mandatory all-at-once prompt. Prioritize surfaces actually present in the project. Inspect code, configuration, dependencies, and documentation; connect behavior to data flows and privileges. Record the commit, environment, tools, relevant commands, and coverage.
 
 For website audits and security-focused development reviews, follow the applicable sections of [web review workflow](references/web-review.md): establish context and threats, trace candidate findings, inspect changes when a baseline exists, and validate authorized fixes. Support static sites, CMS-based sites, server-rendered sites, SPAs, and their APIs; do not assume features are present. Security guidance for new development must match the actual framework and version. Preserve the user's chosen architecture unless a demonstrated risk requires a targeted change.

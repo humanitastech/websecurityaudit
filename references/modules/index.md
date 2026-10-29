@@ -9,6 +9,7 @@ Read only modules applicable to the site and requested profile. These identifier
 | browser | The site delivers browser content or integrates scripts | [browser.md](browser.md) |
 | cms | A CMS, plugin, or theme is involved | [cms.md](cms.md) |
 | dependencies | Manifests, lockfiles, external packages, or builds exist | [dependencies.md](dependencies.md) |
+| php-runtime | Any web-serving PHP runtime or embedded PHP product is present | [php-runtime.md](php-runtime.md) |
 | operations | Hosting, deployment, secrets, logs, or availability is in scope | [operations.md](operations.md) |
 | governance | ENS/ISO gap assessment or organizational requirements are in scope | [governance.md](governance.md) |
 
