@@ -99,3 +99,7 @@ Start from assets/audit-template.json. Validate with Python: python scripts/audi
 ## PHP runtime advisories
 
 PHP sites also load the runtime module, covering deployed versions, vendor backports, native dependencies, and rollout evidence. See [dated PHP advisory snapshot](references/php-advisories.md) and [PHP runtime checks](references/modules/php-runtime.md). Official guidance is refreshed per audit; a clean source-code review or Composer audit does not establish runtime safety.
+
+## Release article
+
+Read [Web Security Audit 1.2.1](ARTICLE-1.2.1.md) for an English introduction to the PHP runtime update and the existing modular review workflow.
