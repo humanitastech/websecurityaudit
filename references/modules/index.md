@@ -5,6 +5,7 @@ Read only modules applicable to the site and requested profile. These identifier
 | ID | Load when | Instructions |
 | --- | --- | --- |
 | identity | Accounts, sessions, restricted data, or administrative routes exist | [identity.md](identity.md) |
+| credits | A plugin or service mutates usage credits, quotas with stored balances, or wallets | [credits.md](credits.md) |
 | inputs | Forms, uploads, user-controlled URLs, APIs, or webhooks exist | [inputs.md](inputs.md) |
 | browser | The site delivers browser content or integrates scripts | [browser.md](browser.md) |
 | cms | A CMS, plugin, or theme is involved | [cms.md](cms.md) |
