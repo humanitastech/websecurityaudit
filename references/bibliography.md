@@ -1,5 +1,7 @@
 # Bibliography
 
+For usage-credit reviews, see the [technical and procedural bibliography](credit-verification.md#technical-and-procedural-bibliography) covering OWASP ASVS/WSTG, Trail of Bits, Hypothesis, MySQL, AWS and Google SRE.
+
 ## PHP runtime security sources (consulted 2026-10-29)
 
 - **PHP Security Team.** [October 2026 announcements and follow-up notices](https://www.php.net/archive/2026.php).

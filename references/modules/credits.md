@@ -8,6 +8,8 @@ Trace one operation from user intent through server authorization, price calcula
 
 Record the confirmed rules for charge timing, retry behavior, insufficient funds, expiry, refunds, and bonuses. Unknown policy remains an open question; do not invent permission to charge or refund. Internal credits and monetary payments must have separate units, identifiers, and accounting. Capture before/after balances and ledger entries using synthetic accounts only.
 
+Use the [credit verification protocol](../credit-verification.md) to turn applicable checks into reproducible tests and a human release decision. Start with the three priority proofs there. For repeated low-value operations, test aggregate limits across supported identities, channels and retries without breaking legitimate usage. Where risk justifies separation of duties, test that an operator cannot both request and approve a high-impact manual adjustment and that approval is invalidated if its target or amount changes.
+
 ## Required checks
 
 | ID | Verify | Evidence for acceptance |
