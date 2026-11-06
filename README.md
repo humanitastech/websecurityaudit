@@ -102,7 +102,7 @@ PHP sites also load the runtime module, covering deployed versions, vendor backp
 
 ## Release article
 
-Read [Web Security Audit 1.2.1](ARTICLE-1.2.1.md) for an English introduction to the PHP runtime update and the existing modular review workflow.
+Read the [English article](ARTICLE.md) for an introduction to the PHP runtime update, the modular review workflow, and credit verification in development.
 
 ## Usage-credit plugins
 

@@ -6,4 +6,4 @@ Prepared on dev and promoted to main through a pull request. Includes five addit
 
 Author: Voxiferum, for HumaitasTech, with support from Codex.
 
-English release article: [ARTICLE-1.2.1.md](https://github.com/humanitastech/websecurityaudit/blob/main/ARTICLE-1.2.1.md).
+English release article: [ARTICLE.md](ARTICLE.md).
