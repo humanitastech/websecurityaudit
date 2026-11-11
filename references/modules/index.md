@@ -8,7 +8,7 @@ Read only modules applicable to the site and requested profile. These identifier
 | credits | A plugin or service mutates usage credits, quotas with stored balances, or wallets | [credits.md](credits.md) |
 | inputs | Forms, uploads, user-controlled URLs, APIs, or webhooks exist | [inputs.md](inputs.md) |
 | browser | The site delivers browser content or integrates scripts | [browser.md](browser.md) |
-| cms | A CMS, plugin, or theme is involved | [cms.md](cms.md) |
+| cms | A CMS, plugin, or theme is involved | [cms.md](cms.md), with the [WordPress plugin checklist](wordpress.md) when applicable |
 | dependencies | Manifests, lockfiles, external packages, or builds exist | [dependencies.md](dependencies.md) |
 | php-runtime | Any web-serving PHP runtime or embedded PHP product is present | [php-runtime.md](php-runtime.md) |
 | operations | Hosting, deployment, secrets, logs, or availability is in scope | [operations.md](operations.md) |
