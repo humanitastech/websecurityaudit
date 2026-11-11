@@ -31,6 +31,8 @@ If criteria appear to conflict, explain both requirements and propose a solution
 
 ## Modular execution
 
+Always load the [usage credits module](references/modules/credits.md) when the audited flow can change a wallet or usage-credit balance, including plugins and free credits. Treat authorization, accounting integrity, concurrency, and recovery as release criteria; unresolved material failures or evidence gaps block a positive readiness recommendation. Record the recommendation separately from human authorization.
+
 For PHP-backed sites, always consider the `php-runtime` module alongside application checks. Refresh [PHP advisories](references/php-advisories.md), identify the deployed web runtime/package and vendor backports, and distinguish application-code evidence from runtime patch evidence. A local CLI version or clean Composer audit cannot establish production safety.
 
 First read [profiles and audit records](references/audit-records.md), select a profile and applicable modules, and initialize a unique audit record. Load only selected [modules](references/modules/index.md), preserving excluded and unverified scope explicitly. Use [checks and evidence](references/checks.md) as an optional broad inventory, not a mandatory all-at-once prompt. Prioritize surfaces actually present in the project. Inspect code, configuration, dependencies, and documentation; connect behavior to data flows and privileges. Record the commit, environment, tools, relevant commands, and coverage.

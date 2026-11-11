@@ -78,7 +78,7 @@ Use only on systems you own or are authorized to assess. Define targets, environ
 ## Branches and versioning
 
 - `main`: initial public baseline and documentation.
-- `dev`: development branch carrying version `1.2.1`.
+- `dev`: development branch carrying version `1.4.0`.
 - Tag `v1.1.0`: snapshot of the website-focused update on `dev` at publication.
 - Tag `v1.0.0`: preserved initial release.
 
@@ -102,4 +102,10 @@ PHP sites also load the runtime module, covering deployed versions, vendor backp
 
 ## Release article
 
-Read [Web Security Audit 1.2.1](ARTICLE-1.2.1.md) for an English introduction to the PHP runtime update and the existing modular review workflow.
+Read the [English article](ARTICLE.md) for an introduction to the PHP runtime update, the modular review workflow, and credit verification in development.
+
+## Usage-credit plugins
+
+The [usage credits module](references/modules/credits.md) covers authorization, balance integrity, retries, concurrent debits, refunds and reconciliation. Applicable integrity failures or missing evidence on balance-changing paths block a positive readiness recommendation. The [evaluation scenarios](tests/credits-cases.md) describe safe tests with synthetic accounts and credits.
+
+Use the [credit verification protocol](references/credit-verification.md) for reproducible integration proofs, recognized references, and release evidence.

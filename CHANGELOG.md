@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.4.0 — 2026-11-05
+
+- Added a reproducible credit verification protocol for concurrent debits, lost responses and competing refunds.
+- Added stateful tests, fault injection, evidence traceability, and gradual rollout/containment criteria.
+- Added recognized technical references without changing the ENS/ISO baseline.
+
+## 1.3.0 — 2026-11-05
+
+- Added nine mandatory checks for applicable usage-credit flows, including concurrent debits, retries, refunds, ledger reconciliation, and upgrade recovery.
+- Added release-readiness criteria, evidence requirements, and eight manual evaluation scenarios for wallet plugins.
+
 ## 1.2.1 — 2026-10-29
 
 - Added a PHP runtime module with deployed SAPI/package, vendor-backport, native-library, and post-rollout evidence checks.
