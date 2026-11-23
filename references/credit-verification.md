@@ -4,7 +4,7 @@ Use this procedure with the [credit module](modules/credits.md). Its technical r
 
 ## Establish the expected behavior
 
-Get confirmed rules for pricing, timing, delivery, refunds, expiry, bonuses and privileged adjustments. Record the requirement source and version. A missing rule is a verification gap; do not invent one. If available, use `swdocumentation` to resolve policy gaps and `software-user-acceptance` to verify that users can understand the price, identify a charge and follow a reversal. These are optional handoffs; the audit can proceed without either skill.
+Get confirmed rules for pricing, timing, delivery, refunds, expiry, bonuses and privileged adjustments. Record the requirement source and version. A missing rule is a verification gap; do not invent one. If available, use `umldocumentation` to resolve policy gaps and `software-user-acceptance` to verify that users can understand the price, identify a charge and follow a reversal. These are optional handoffs; the audit can proceed without either skill.
 
 ## Run the priority proofs
 
